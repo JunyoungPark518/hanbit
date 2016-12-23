@@ -32,10 +32,10 @@ public class ShowMonth {
 			System.out.println(year + "-" + month + "월은 " + day + "일까지 있습니다.");
 			break;
 		case 2:
-			if(year / 4 == 0 && year / 100 != 0) {
+			if(year % 4 == 0 && year % 100 != 0) {
 				yearCheck = "윤년";
 				day = 29;
-			} else if(year / 4 == 0 && year / 100 == 0 && year / 400 == 0) {
+			} else if(year % 4 == 0 && year % 100 == 0 && year % 400 == 0) {
 				yearCheck = "윤년";
 				day = 29;
 			} else {
