@@ -27,7 +27,7 @@ public class ShowMonth {
 			} else if (year % 100 == 0) {
 				yearCheck = "평년";
 				day = 28;
-			} else if (year % 4 != 0) {
+			} else if (year % 4 == 0) {
 				yearCheck = "윤년";
 				day = 29;
 			} else {
