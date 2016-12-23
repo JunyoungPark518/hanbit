@@ -15,12 +15,16 @@ public class SeriesInput {
 		int sum = 0, i = 0;
 		String str = "0";
 		System.out.println("If you want to stop, Type -1");
-		while(true) {
+		while (true) {
 			System.out.print("Type Number:");
 			i = s.nextInt();
-			str = str + "+" + Integer.toString(i);
+			if (i < 0) {
+				str = str + "-" + Integer.toString(Math.abs(i));
+			} else {
+				str = str + "+" + Integer.toString(i);
+			}
 			sum = sum + i;
-			if(i==-1) {
+			if (i == -1) {
 				System.out.println("The program is terminated.");
 				break;
 			}
