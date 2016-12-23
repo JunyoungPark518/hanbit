@@ -2,7 +2,14 @@ package com.hanbit.branch_switch;
 
 import java.util.Scanner;
 
+/**
+@FILE  : ShowMonth.java
+@DATE  : 2016. 12. 23.
+@AUTHOR: Junyoung Park
+@STORY : 
+ */
 public class ShowMonth {
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int year = 0, month = 0, day = 0;
