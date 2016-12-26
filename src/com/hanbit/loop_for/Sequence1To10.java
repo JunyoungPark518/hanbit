@@ -1,22 +1,19 @@
-package com.hanbit.loop_while;
+package com.hanbit.loop_for;
 
 /**
 @FILE  : SeriesOneToFive.java
-@DATE  : 2016. 12. 23.
+@DATE  : 2016. 12. 26.
 @AUTHOR: J.John Park
 @STORY
-	1부터 5까지의 합 구하기(diff=1) to use while break
+	1부터 10까지의 합 구하기(diff=1) to use for loop
 
  */
-public class SeriesOneToFive {
+public class Sequence1To10 {
 	public static void main(String[] args) {
 		int i = 0, sum = 0;
-		while (true) {
+		for(i=5; i>=1; i--) { // init, limit, step
 			sum += i;
-			if(i==5) {
-				break;
-			}
-			i++;
+			System.out.print(i + " ");
 		}
 		System.out.println("합은 " + sum + "입니다.");
 	}

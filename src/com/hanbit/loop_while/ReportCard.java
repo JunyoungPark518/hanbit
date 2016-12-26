@@ -17,7 +17,7 @@ public class ReportCard {
 		String name = "";
 		System.out.print("Name:");
 		name = sc.next();
-		while(true) {
+		while(subjects<6) {
 			System.out.println("If you want to stop, Type -1");
 			System.out.print("Score:");
 			score = sc.nextInt();
@@ -26,6 +26,7 @@ public class ReportCard {
 			}
 			total = total + score;
 			subjects++;
+			
 		}
 		average = total / subjects;
 		char grade = 0;
