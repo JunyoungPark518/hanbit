@@ -21,6 +21,7 @@ public class Fibonacci {
 			if(i>10)
 				break;
 		}
+		sum+=2; // init of a and b
 		System.out.printf(
 				  "======================================\n"
 				+ "1, 1, 2, 3, 5, 8, 13, 21, 34, 55의 합 \n"
