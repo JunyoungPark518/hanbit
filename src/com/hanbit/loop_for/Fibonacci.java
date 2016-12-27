@@ -10,7 +10,7 @@ package com.hanbit.loop_for;
  */
 public class Fibonacci {
 	public static void main(String[] args) {
-		int a = 1, b = 1, c = 0, sum = 0;
+		int a = 1, b = 1, c = 0, sum = 2;
 		for(int i=3;;) {
 			System.out.println(a + "," + b + "," + c + "," + sum);
 			c = b + a;
@@ -21,7 +21,6 @@ public class Fibonacci {
 			if(i>10)
 				break;
 		}
-		sum+=2; // init of a and b
 		System.out.printf(
 				  "======================================\n"
 				+ "1, 1, 2, 3, 5, 8, 13, 21, 34, 55의 합 \n"
