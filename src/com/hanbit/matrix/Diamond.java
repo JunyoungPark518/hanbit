@@ -14,6 +14,7 @@ public class Diamond {
         end=3; //열의 끝 위치
         for(int i=0; i<col; i++) {
         	for(int j=0; j<row; j++) {
+        		arr[i][j] = val;
         		System.out.printf("%d\t",val);
         	}
         	System.out.println();

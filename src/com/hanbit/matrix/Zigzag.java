@@ -11,8 +11,8 @@ public class Zigzag {
         for(i=0;i<arr.length;i++) {
     		for(j=0; j<arr[i].length; j++) {
     			arr[i][j] = k;
-    			System.out.printf("%d\t",arr[i][j]);
     			k++;
+    			System.out.printf("%d\t",arr[i][j]);
     			if(i==1||i==3) {
     				
     			}
